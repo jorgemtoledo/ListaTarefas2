@@ -11,55 +11,42 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Formulario extends AppCompatActivity {
+public class Evento extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_formulario);
+        setContentView(R.layout.activity_evento);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         if(toolbar != null){
-            toolbar.setTitle("Voltar");
-            toolbar.setNavigationIcon(R.drawable.imagem_voltar);
+            toolbar.setTitle("Voltar Configurar");
+            toolbar.setNavigationIcon(R.drawable.imagem_voltar_config);
 
             toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    NavUtils.navigateUpFromSameTask(Formulario.this);
+                    Intent intent = new Intent(Evento.this, Formulario.class);
+                    startActivity(intent);
 
                 }
             });
-
         }
     }
 
-
-//    Cria o botao confirmar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_formulario, menu);
+        getMenuInflater().inflate(R.menu.menu_evento, menu);
         return true;
     }
 
-//    Dando acao ao botao confirmar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         switch (item.getItemId()){
-            case R.id.menu_formulario_ok:
+            case R.id.menu_evento_ok:
 
                 finish();
-
-                return false;
-
-            case R.id.menu_formulario_config:
-
-                Intent intent = new Intent(Formulario.this, Evento.class);
-                startActivity(intent);
-
-
 
                 return false;
             default:
