@@ -27,6 +27,42 @@
             android:name=".Evento"
             android:label="@string/title_activity_evento"
             android:parentActivityName=".Evento"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Calendario"
+            android:label="@string/title_activity_calendario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GridLayout"
+            android:label="@string/title_activity_grid_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tela_de_alteracao"
+            android:label="@string/title_activity_tela_de_alteracao"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tela_de_alteracao2"
+            android:label="@string/title_activity_tela_de_alteracao2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tela_de_cadastro"
+            android:label="@string/title_activity_tela_de_cadastro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tela_de_cadastro2"
+            android:label="@string/title_activity_tela_de_cadastro2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tela_de_cancelar"
+            android:label="@string/title_activity_tela_de_cancelar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tela_de_cancelar2"
+            android:label="@string/title_activity_tela_de_cancelar2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".tela_de_opcao"
+            android:label="@string/title_activity_tela_de_opcao"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
