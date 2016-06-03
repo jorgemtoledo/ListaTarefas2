@@ -61,7 +61,7 @@
             android:label="@string/title_activity_tela_de_cancelar2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".tela_de_opcao"
+            android:name=".Tela_de_opcao"
             android:label="@string/title_activity_tela_de_opcao"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

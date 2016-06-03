@@ -1,13 +1,14 @@
 package com.example.eumesmo.listatarefas2;
 
-        import android.content.Context;
-        import android.database.Cursor;
-        import android.database.sqlite.SQLiteDatabase;
-        import android.database.sqlite.SQLiteOpenHelper;
 
-        import java.util.ArrayList;
-        import java.util.List;
-        import java.util.Queue;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * Created by Kayo on 10/05/2016.
@@ -16,7 +17,7 @@ public class Manter_bd extends SQLiteOpenHelper {
     //váriaveis privada e estáticas para toda  a classe
     public static final String nome_bd="Agenda";
     public static final int versao_bd=5;// é importante para decidir a versão da base de dados com a ajuda do método onUpgradepublic static final String Id="_id";
-    public  static  final String Tabela="minhastarefas";
+    public  static  final String Tabela="compromissos";
     public static final String Id="_id";
     public static final String data_inicio="data_inicio";
     public static  final String hora_inicio="hora_inicio";
@@ -43,7 +44,7 @@ public class Manter_bd extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {//esse método cria a base dados com o nome estabelecido acima , caso não exista essa base de dados.
 
-        String criando_bd="CREATE TABLE minhastarefas( "+
+        String criando_bd="CREATE TABLE compromissos( "+
                 Id+" INTEGER PRIMARY KEY AUTOINCREMENT,"+
                 data_inicio+" TEXT,"+
                 hora_inicio+" TEXT,"+

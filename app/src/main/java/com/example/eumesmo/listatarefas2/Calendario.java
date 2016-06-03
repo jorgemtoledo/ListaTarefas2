@@ -51,16 +51,5 @@ public class Calendario extends AppCompatActivity {
         });
 
 
-        bt_compromisso=(Button)findViewById(R.id.bt_compromisso);
-        bt_compromisso.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Calendario.this, tela_de_opcao.class);
-                intent.putExtra("data_compromisso", data_compromisso);
-                startActivity(intent);
-                finish();
-            }
-
-        });
     }
 }
